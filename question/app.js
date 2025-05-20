@@ -98,10 +98,10 @@ calc.divide(25,5);
 
 //Q9
 function remainder(x,y){
- return x % y;
+ return x+'を'+y+'で割った余りは '+x%y+' です。';
 }
 
-console.log('5 を 3 で割った余りは '+remainder(5,3)+' です。');
+console.log(remainder(5,3));
 
 //Q10
 
@@ -130,11 +130,14 @@ console.log('num is 0');
 }
 
 //Q4
-let numbers = [ ]
 
-for (let numbers = 0; numbers <= 99; numbers++) {
-  console.log(numbers);
+let numbers = []
+for (let x = 0; x <= 99; x ++) {
+numbers[x] = x;
 }
+
+console.log(numbers);
+
 
 //Q5
 let mixed = [4, '2', 5, '8', '9', 0, 1];
